@@ -69,7 +69,12 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         
-                        <a class="collapse-item" href="buttons.html">Agregar usuario</a>
+
+                        <!--MODAL-->
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#usuarioModal">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Agregar usuario
+                        </a>
                         <a class="collapse-item" href="cards.html">Usuarios</a>
                     </div>
                 </div>
@@ -331,7 +336,20 @@
                         h1{
                             text-align: center;
                         }
+                        div.w-33 {
+                        width: 62.5%;
                         
+                                }
+
+                        div.center {
+                            text-align: right ;
+                                }
+
+                            button {}
+                            div.form-group{
+                                text-align: center;
+                            }
+
                       </style>
                       
                       <form>
@@ -339,23 +357,26 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nombre
                             </label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese nombre">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                             
                           </div>
                           <div class="form-group">
                             <label for="exampleInputPassword1" >Direccion</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese direccion">
+                            <input type="password" class="form-control" id="exampleInputPassword1" >
                           </div>
                           <div class="form-group">
                               <label for="exampleInputPassword1">Correo electronico</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Correo electronico">
+                              <input type="password" class="form-control" id="exampleInputPassword1" >
                             </div>
                             <div class="form-group">
                               <label for="exampleInputPassword1">Numero de telefono</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese numero de telefono">
+                              <input type="password" class="form-control" id="exampleInputPassword1" >
                             </div>
-                          
-                          <button type="submit" class="btn btn-primary" >Agregar nuevo usuario</button>
+                            <div class="w-33">
+                                <div class="center">
+                                   <button type="submit" class="btn btn-primary" >Agregar nuevo usuario</button>
+                              </div>
+                           </div>
                       </form>
                 </div>
             </div>
@@ -401,6 +422,27 @@
             </div>
         </div>
     </div>
+
+    <!-- Usuario Modal-->
+    <div class="modal fade" id="usuarioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

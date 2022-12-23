@@ -43,6 +43,7 @@
       $('.scroll-to-top').fadeOut();
     }
   });
+  
 
   // Smooth scrolling using jQuery easing
   $(document).on('click', 'a.scroll-to-top', function(e) {
@@ -52,5 +53,5 @@
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
-
+  
 })(jQuery); // End of use strict
